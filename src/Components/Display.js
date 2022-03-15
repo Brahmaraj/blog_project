@@ -34,9 +34,10 @@ const Display = () => {
                                                     className="disp_image"
                                                     />
                                                 </div>
-                                                <div className="information_container">
+                                                <div className="information_container" style={{display:"grid"}}>
                                                     <h3>{ele.name}</h3>
                                                     <p>{ele.display_text}</p>
+                                                    <p style={{fontWeight:"800"}}><span style={{fontWeight:"500"}}>Category:</span> {selected.toUpperCase()}</p>
                                                 </div>
                                             </div>  
                                             <hr />
