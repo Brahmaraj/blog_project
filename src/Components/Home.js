@@ -17,7 +17,7 @@ const Home = () => {
                 style={{borderRadius:"10px"}}
                 className="pointer_cursor"
             />
-            <div style={{zIndex:"5",left:"-400px",position:"relative",top:"200px",color:"#ECECEC",fontSize:"30px",fontWeight:"600"}}>{data[0].data[0].name}</div>
+            <div style={{zIndex:"5",left:"-400px",position:"relative",top:"200px",color:"#ECECEC",fontSize:"30px",fontWeight:"600",height:"50px"}} className="pointer_cursor">{data[0].data[0].name}</div>
             <div style={{position:"relative",right:"10%"}}>
                 <div>
                     <img src={data[1].data[0].img}
