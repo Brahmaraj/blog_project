@@ -9,10 +9,10 @@ const Article = () => {
 
     return (
         <>
-        <div>
-        {selected}
+        <div className="article_container">
+        {/* {selected}
         <br />
-        {selectedID}
+        {selectedID} */}
         <br />
         {
             data.map((element)=>{
@@ -24,9 +24,18 @@ const Article = () => {
                                 console.log(ele.info)
                                 if(String(ele.id)===selectedID){
                                     return (
-                                    <p key={index}>
-                                        {ele.info}
-                                    </p>
+                                    <div key={index}>
+                                        <h1>{ele.name}</h1>
+                                        <br />
+                                        <img src={ele.img} width="500px" alt={ele.info}/>
+                                        <br />
+                                        <div>
+                                        <br />
+                                        <p className="article_para">{ele.para1}</p>
+                                        <br />
+                                        <p className="article_para">{ele.para2}</p>
+                                        </div>
+                                    </div>
                                 )
                                 }
                                 return null;

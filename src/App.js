@@ -6,6 +6,7 @@ import { DataContext } from "./Components/Blog_Context";
 import Display from "./Components/Display";
 import Article from "./Components/Article";
 import "./Components/style.css"
+import Footer from "./Components/Footer";
 
 const App = () => {
     return(
@@ -18,11 +19,11 @@ const App = () => {
                     <Route path="/" element={<Navigate to="/home"/>}/>
                     <Route path="/home" element={<Home />}/>
                     <Route path="/category/:selected" element={<Display />}>
-                        <Route path="/category/:selected/:selectedID" element={<Article />}/>
+                        
                     </Route>
-                    
-                    
+                    <Route path="/category/:selected/:selectedID" element={<Article />}/>
                 </Routes>
+                <Footer />
             </Router>
         </div>
         </DataContext>
