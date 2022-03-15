@@ -7,6 +7,7 @@ import Display from "./Components/Display";
 import Article from "./Components/Article";
 import "./Components/style.css"
 import Footer from "./Components/Footer";
+import Logo from "./Components/Logo";
 
 const App = () => {
     return(
@@ -14,6 +15,7 @@ const App = () => {
         <DataContext>
         <div>
             <Router>
+                <Logo />
                 <Header />
                 <Routes>
                     <Route path="/" element={<Navigate to="/home"/>}/>
